@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Lobster Two', cursive;
+}
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background: lightgrey;
+    border-radius: 10000px;
+    border: 20px solid black;
+}
+
+
+.container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    flex-direction: column;
+}
+
+/*buttton customization*/
+ #color{
+     background-color: #007EA7;
+     border: 0;
+     border-radius: 20px;
+     color: #fff;
+     padding: 20px;
+     font-size: 1.4em;
+     transition: .4s ease;
+ }
+
+ #color:hover{
+     background-color: #003459;
+     box-shadow: 5px 5px #53a7ea,
+            5px 5px #53a7ea,
+            5px 5px #53a7ea;
+
+  -webkit-transform: translateX(-100px);
+   transform: translateX(-3px);
+ }
+
+  #color:active{
+      background-color: #003459;
+      box-shadow:5px 5px #53a7ea,
+            5px 5px #53a7ea,
+            5px 5px #53a7ea;
+  -webkit-transform: translateX(-100px);
+   transform: translateX(-3px);
+  }
+
+/*title*/
+h1{
+    padding-bottom: 20px;
+}
+
+/*input customization*/
+
+#todoInput{
+    background-color: black;
+    border: 0;
+    font-size: 1.4em;
+    border-radius: 13px;
+    justify-content: center;
+    display: flex;
+    font-family: monospace;
+    animation: change-background 5s ease infinite;
+    align-items: center;
+    height: 40px;
+    transition: .6s ease-out;
+}
+
+
+@keyframes change-background{
+    0%{
+        background-color: black;
+    }
+
+    50%{
+        background-color: #007EA7;
+    }
+}
+
+
+/*list output*/
+#todoList{
+    font-size: 2em;
+    font-family: monospace;
+}
